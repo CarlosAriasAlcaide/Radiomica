@@ -1,0 +1,173 @@
+#########################################################################################################
+########					RADIOMICA					#########
+#########################################################################################################
+
+Presentacion
+   
+   Este es el manual de la aplicacion "Radiomica" que se encuentra en el link:
+	https://carlos-arias.shinyapps.io/Radiomics/
+   
+   Completa el proyecto, junto con este manual y la aplicacion, el Trabajo de Fin de Grado "Radiomica:
+   las imagenes medicas como datos", situado en:
+	https://www.dropbox.com/s/icsvzcu7xvrcgyl/Memoria.pdf?dl=0
+
+   Se recomienda leer el trabajo y dicho manual antes de la utilizacion de la aplicacion con el fin de 
+   poder obtener el maximo provecho.
+
+Estructura de la aplicacion
+   La aplicacion sigue como hilo conductor el analisis estadistico y emplea una pestaña para cada uno
+   de los pasos:
+      - Eleccion de caracteristicas y numero de pacientes.
+      - Transformacion de las caracteristicas.
+      - Reduccion de la dimension de las unidades estadisticas.
+      - Clasificacion de los pacientes.
+
+   Estructura de las pestañas
+      - En la parte izquierda se encuentra en tono gris el panel de comandos personalizado para cada uno
+        de los pasos seguidos en el analisis estadistico.
+      - En la parte derecha en color blanco se tiene la zona de resultados, que al igual que la anterior,
+        esta personalizada en funcion del paso en que se encuentre.
+
+OBSERVACION - La aplicacion tiene unas opciones que aparecen por defecto. Los cambios que se realicen 
+se mantenienen a lo largo de la ejecucicon de la misma incluso aunque se cambie de pestaña, sin embargo,
+una vez se haya salido de esta, dichas opciones no se guardan.
+
+
+
+1. Eleccion de caracteristicas
+   
+   Panel de comandos
+      - Consta de dos partes:
+	a) Un deslizador para elegir el numero de pacientes que se desea tener en el estudio, situado en 
+	   la parte superior.
+	b) Un grupo de cajas de eleccion con las que se eligen las caracteristicas que deseamos incorpo-
+	   rar.
+
+   Panel de resultados
+      - En esta pestaña no existen resultados a mostrar. En su defecto aparece una tabla con lo que es 
+	cada una de las caractaristicas del estudio.
+
+   Cambiar cantidad de pacientes en el estudio
+      1) Pinche sobre la barra deslizadora a) del panel de comandos y, manteniendo pulsado, deslice hacia
+	 la izquierda o hacia la derecha en funcion de si quiere disminuir o aumentar la cantidad de pa-
+	 cientes.
+
+   Añadir o quitar caracteristicas
+      1) En grupo de cajas de eleccion existen los siguientes estados.
+           1.1) Tener el cuadradito en blanco: significa que la caracteristica no se incorpora.
+           1.2) Tener el cuadradito con una v: la caracteristica si se esta añadiendo al estudio.
+      2) Pinchando sobre la caracteristica o el cuadradito se añade o se quita segun la situacion descri
+	 ta en 1.1) y 1.2).
+
+
+
+2. Transformacion caracteristicas
+
+   Panel de comandos
+      - Tiene tres partes:
+	a) Un menu desplegable bajo "Caracteristica mostrada".
+	b) Una lista de opciones con eleccion unica debajo de "Transformacion a elegir para la caracte-
+	   ristica".
+	c) Un boton "Guardar".
+   
+   Panel de resultados
+      - Se muestran 7 histogramas obtenidos tras aplicar a la caracteristica seleccionada en a) cada una
+	de las 7 posibles transformaciones. La caracteristica seleccionada destaca por tener su histogra-
+	ma en color rojo.
+
+   Cambiar la transformacion de la caracteristica FX.Y
+      1) Dirija el puntero hacia el menu desplegable de a) y pinche sobre él para hacer que se despliegue.
+      2) Seleccione la caracteristica que quiere visualizar pinchando sobre ella. Observara que la lista 
+	 de b) y el panel de resultados cambia para mostrar la transformacion que tiene la nueva caracte-
+	 ristica seleccionada.
+      3) Seleccione la transformacion que desee de entre las que hay en b), pinchando sobre ella.
+      4) Pinche en el botón "Guardar". Observara que en el panel de la derecha cambiara el histograma ro-
+	 jo, correspondiente a la antigua transformacion, al histograma de la nueva.
+      NOTA - Si no se realiza el paso 4), la transformacion no se aplica al estudio.
+
+
+
+3. Reduccion dimension
+   
+   Panel de comandos
+      - Tiene tres partes:
+        a) Un menu desplegable bajo el rotulo "Encadenamiento".
+	b) Una caja de seleccion "Mostrar grupos de caracteristicas".
+	c) Un menu numerico bajo el titulo "Numero de caracteristicas", que aparece cuando se marca con V
+	   la caja de seleccion de b).
+   
+   Panel de resultados
+      - Consta de dos pestañas:
+	a) "Matriz de correlacion": muestra la dicha matriz.
+	b) "Dendrograma": donde se muestra el dendograma. 
+	OBSERVACION - Si se tiene marcada la caja de seleccion b), se muestra en la matriz y en el dendro-
+	grama los grupos obtenidos de caracteristicas metidas en un cuadrado negro y rojo, respectivamen-
+	te.
+
+   Cambiar el tipo de encadenamiento elegido
+      1) Se pincha sobre el menu desplegable a) para desplegarlo.
+      2) Se selecciona el tipo de encadenamiento pinchando sobre el.
+
+   Cambiar el numero de caracteristicas usadas para la reduccion de dimension
+      1) Se activa la caja de seleccion b) para que aparezca el menu numerico.
+      2) Se pincha sobre el numero para activar el cursor.
+      3) Se escribe la cifra deseada.
+
+
+
+4. Clasificacion pacientes
+   
+   Panel de comandos
+      - Tiene tres partes:
+        a) Un menu desplegable bajo el rotulo "Distancia".
+	b) Otro menu desplegable bajo el rotulo "Encadenamiento".
+	c) Un menu numerico bajo el titulo "Numero de grupos de pacientes".
+   
+   Panel de resultados
+      - Consta de dos pestañas:
+	a) "Nubes de puntos": muestra una matriz de nubes de puntos con los pacientes agrupados por colo-
+	   res.
+	b) "Dendrograma": se muestra el dendograma de los pacientes. 
+	OBSERVACION - En el dendrograma los pacientes aparecen metidos en un cuadrado rojo agrupados se-
+	gun el grupo en el que han sido clasificados.
+   
+   Cambiar el tipo de distancia elegida
+      1) Se pincha sobre el menu desplegable a) para desplegarlo.
+      2) Se selecciona el tipo de distancia pinchando sobre ella.
+
+   Cambiar el tipo de encadenamiento elegido
+      1) Ver paso anterior y adaptarlo a encadenamiento.
+
+   Cambiar cantidad de grupos de pacientes
+      1) Pinche sobre la barra deslizadora c) del panel de comandos y, manteniendo pulsado, deslice hacia
+	 la izquierda o hacia la derecha en funcion de si quiere disminuir o aumentar la cantidad de gru-
+	 pos.
+
+
+
+5. Contacto
+
+   Idea, diseno e implementacion de aplicacion Shiny:
+      Carlos Arias Alcaide
+	 email: carlos_arias95@hotmail.com
+	 Movil: +34 692 27 22 13
+
+
+   Directores del Trabajo de Fin de Grado:
+      Amparo Baillo Moreno
+	 email: amparo.baillo@uam.es
+         Departamento de Matematicas
+         Facultad de Ciencias
+         Universidad Autonoma de Madrid
+         28049 Madrid
+         Telefono: +34 91 497 7698
+         Despacho: 203 - Modulo 8 (antiguo C-XVI)
+
+      Davide Barbieri
+         email: davide.barbieri@uam.es
+	 Departamento de Matematicas
+	 Facultad de Ciencias
+	 Universidad Autonoma de Madrid
+	 28049 Madrid
+	 Telefono: +34 91 497 4177
+	 Despacho: 305 - Modulo 17
