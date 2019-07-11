@@ -5,7 +5,7 @@
 Presentacion
    
    Este es el manual de la aplicacion "Radiomica" que se encuentra en el link:
-	https://carlos-arias.shinyapps.io/Radiomics/
+	https://carlos-arias.shinyapps.io/Radiomic/
    
    Completa el proyecto, junto con este manual y la aplicacion, el Trabajo de Fin de Grado "Radiomica:
    las imagenes medicas como datos", situado en:
@@ -15,21 +15,21 @@ Presentacion
    poder obtener el maximo provecho.
 
 Estructura de la aplicacion
-   La aplicacion sigue como hilo conductor el analisis estadistico y emplea una pestaña para cada uno
+   La aplicacion sigue como hilo conductor el analisis estadistico y emplea una pestaÃ±a para cada uno
    de los pasos:
       - Eleccion de caracteristicas y numero de pacientes.
       - Transformacion de las caracteristicas.
       - Reduccion de la dimension de las unidades estadisticas.
       - Clasificacion de los pacientes.
 
-   Estructura de las pestañas
+   Estructura de las pestaÃ±as
       - En la parte izquierda se encuentra en tono gris el panel de comandos personalizado para cada uno
         de los pasos seguidos en el analisis estadistico.
       - En la parte derecha en color blanco se tiene la zona de resultados, que al igual que la anterior,
         esta personalizada en funcion del paso en que se encuentre.
 
 OBSERVACION - La aplicacion tiene unas opciones que aparecen por defecto. Los cambios que se realicen 
-se mantenienen a lo largo de la ejecucicon de la misma incluso aunque se cambie de pestaña, sin embargo,
+se mantenienen a lo largo de la ejecucicon de la misma incluso aunque se cambie de pestaÃ±a, sin embargo,
 una vez se haya salido de esta, dichas opciones no se guardan.
 
 
@@ -44,7 +44,7 @@ una vez se haya salido de esta, dichas opciones no se guardan.
 	   rar.
 
    Panel de resultados
-      - En esta pestaña no existen resultados a mostrar. En su defecto aparece una tabla con lo que es 
+      - En esta pestaÃ±a no existen resultados a mostrar. En su defecto aparece una tabla con lo que es 
 	cada una de las caractaristicas del estudio.
 
    Cambiar cantidad de pacientes en el estudio
@@ -52,11 +52,11 @@ una vez se haya salido de esta, dichas opciones no se guardan.
 	 la izquierda o hacia la derecha en funcion de si quiere disminuir o aumentar la cantidad de pa-
 	 cientes.
 
-   Añadir o quitar caracteristicas
+   AÃ±adir o quitar caracteristicas
       1) En grupo de cajas de eleccion existen los siguientes estados.
            1.1) Tener el cuadradito en blanco: significa que la caracteristica no se incorpora.
-           1.2) Tener el cuadradito con una v: la caracteristica si se esta añadiendo al estudio.
-      2) Pinchando sobre la caracteristica o el cuadradito se añade o se quita segun la situacion descri
+           1.2) Tener el cuadradito con una v: la caracteristica si se esta aÃ±adiendo al estudio.
+      2) Pinchando sobre la caracteristica o el cuadradito se aÃ±ade o se quita segun la situacion descri
 	 ta en 1.1) y 1.2).
 
 
@@ -76,12 +76,12 @@ una vez se haya salido de esta, dichas opciones no se guardan.
 	ma en color rojo.
 
    Cambiar la transformacion de la caracteristica FX.Y
-      1) Dirija el puntero hacia el menu desplegable de a) y pinche sobre él para hacer que se despliegue.
+      1) Dirija el puntero hacia el menu desplegable de a) y pinche sobre Ã©l para hacer que se despliegue.
       2) Seleccione la caracteristica que quiere visualizar pinchando sobre ella. Observara que la lista 
 	 de b) y el panel de resultados cambia para mostrar la transformacion que tiene la nueva caracte-
 	 ristica seleccionada.
       3) Seleccione la transformacion que desee de entre las que hay en b), pinchando sobre ella.
-      4) Pinche en el botón "Guardar". Observara que en el panel de la derecha cambiara el histograma ro-
+      4) Pinche en el botÃ³n "Guardar". Observara que en el panel de la derecha cambiara el histograma ro-
 	 jo, correspondiente a la antigua transformacion, al histograma de la nueva.
       NOTA - Si no se realiza el paso 4), la transformacion no se aplica al estudio.
 
@@ -97,7 +97,7 @@ una vez se haya salido de esta, dichas opciones no se guardan.
 	   la caja de seleccion de b).
    
    Panel de resultados
-      - Consta de dos pestañas:
+      - Consta de dos pestaÃ±as:
 	a) "Matriz de correlacion": muestra la dicha matriz.
 	b) "Dendrograma": donde se muestra el dendograma. 
 	OBSERVACION - Si se tiene marcada la caja de seleccion b), se muestra en la matriz y en el dendro-
@@ -124,7 +124,7 @@ una vez se haya salido de esta, dichas opciones no se guardan.
 	c) Un menu numerico bajo el titulo "Numero de grupos de pacientes".
    
    Panel de resultados
-      - Consta de dos pestañas:
+      - Consta de dos pestaÃ±as:
 	a) "Nubes de puntos": muestra una matriz de nubes de puntos con los pacientes agrupados por colo-
 	   res.
 	b) "Dendrograma": se muestra el dendograma de los pacientes. 
