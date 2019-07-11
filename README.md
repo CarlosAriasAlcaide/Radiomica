@@ -5,4 +5,5 @@ Este proyecto consta de tres documentos:
   - El manual de la aplicación
   
 El link para acceder a la aplicación interactiva es:
+  
   https://carlos-arias.shinyapps.io/Radiomic
