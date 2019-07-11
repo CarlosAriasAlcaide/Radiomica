@@ -9,7 +9,7 @@ Presentacion
    
    Completa el proyecto, junto con este manual y la aplicacion, el Trabajo de Fin de Grado "Radiomica:
    las imagenes medicas como datos", situado en:
-	https://www.dropbox.com/s/icsvzcu7xvrcgyl/Memoria.pdf?dl=0
+	https://github.com/CarlosAriasAlcaide/Radiomica/blob/master/Memoria.pdf
 
    Se recomienda leer el trabajo y dicho manual antes de la utilizacion de la aplicacion con el fin de 
    poder obtener el maximo provecho.
