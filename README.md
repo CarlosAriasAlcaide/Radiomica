@@ -1,2 +1,8 @@
 # Radiomica
-Este proyecto consta de tres documentos: una memoria de análisis, una aplicación interactiva para visualización de datos y el manual de la aplicación.
+Este proyecto consta de tres documentos:
+  - Una memoria de análisis
+  - Una aplicación interactiva para visualización de datos
+  - El manual de la aplicación
+  
+El link para acceder a la aplicación interactiva es:
+  https://carlos-arias.shinyapps.io/Radiomics
